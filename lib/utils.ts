@@ -15,6 +15,15 @@ export function formatPressure(val: number | null | undefined): string {
   return `${val.toFixed(1)} psi`;
 }
 
+export function formatSourceFormat(fmt: string): string {
+  const map: Record<string, string> = {
+    motec: "MoTeC",
+    aim: "AiM",
+    fit: "Garmin .fit",
+  };
+  return map[fmt?.toLowerCase()] ?? fmt ?? "Unknown";
+}
+
 export function cn(...classes: (string | undefined | false | null)[]): string {
   return classes.filter(Boolean).join(" ");
 }
