@@ -1,4 +1,4 @@
-﻿import axios from "axios";
+import axios from "axios";
 import type { Session, Lap, ChannelData, ChannelMeta, ComparisonSeries, VitalsResponse } from "./types";
 
 const api = axios.create({

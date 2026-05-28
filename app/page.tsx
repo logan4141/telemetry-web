@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { SessionList } from "@/components/sessions/SessionList";
 
 export default function Dashboard() {

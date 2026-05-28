@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import dynamic from "next/dynamic";
 import type { ComparisonSeries } from "@/lib/types";
 import type { Data, Layout } from "plotly.js";

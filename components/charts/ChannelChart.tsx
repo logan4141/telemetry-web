@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import dynamic from "next/dynamic";
 import type { Data, Layout } from "plotly.js";
 

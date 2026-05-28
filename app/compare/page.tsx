@@ -34,7 +34,7 @@ export default function ComparePage() {
         {/* Session picker */}
         <div className="lg:col-span-2">
           <p className="text-xs text-gray-400 uppercase tracking-wide font-semibold mb-3">
-            Sessions — select 2 or more
+            Sessions ï¿½ select 2 or more
           </p>
           <div className="grid gap-2">
             {allSessions?.map(s => (
@@ -49,8 +49,8 @@ export default function ComparePage() {
               >
                 <div className="font-medium">{s.name}</div>
                 <div className="text-xs text-gray-500 mt-0.5">
-                  {s.track} · {s.date.slice(0, 10)}
-                  {s.is_benchmark && " · Benchmark"}
+                  {s.track} ï¿½ {s.date.slice(0, 10)}
+                  {s.is_benchmark && " ï¿½ Benchmark"}
                 </div>
               </button>
             ))}
@@ -86,7 +86,7 @@ export default function ComparePage() {
           Loading...
         </div>
       )}
-      {comparison && !isLoading && <LapComparison title={`${channel} — Best Laps`} series={comparison} />}
+      {comparison && !isLoading && <LapComparison title={`${channel} ï¿½ Best Laps`} series={comparison} />}
     </div>
   );
 }

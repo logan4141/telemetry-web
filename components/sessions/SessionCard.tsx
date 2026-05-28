@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import Link from "next/link";
 import type { Session } from "@/lib/types";
 import { formatDistanceToNow } from "date-fns";

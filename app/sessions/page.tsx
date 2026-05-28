@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useQuery } from "@tanstack/react-query";
 import { sessions as sessionsApi } from "@/lib/api";
 import { SessionCard } from "@/components/sessions/SessionCard";

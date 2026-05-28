@@ -1,4 +1,4 @@
-﻿import { FileDropzone } from "@/components/upload/FileDropzone";
+import { FileDropzone } from "@/components/upload/FileDropzone";
 
 export default function UploadPage() {
   return (
