@@ -4,9 +4,3 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-[[redirects]]
-  from = "/api/*"
-  to = "https://web-databaseurl-8601.up.railway.app/api/:splat"
-  status = 200
-  force = true
