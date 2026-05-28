@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { sessions, laps as lapsApi } from "@/lib/api";
@@ -27,10 +27,11 @@ export default function SessionPage() {
   const { data: laps } = useQuery({
     queryKey: ["laps", id],
     queryFn: () => lapsApi.forSession(id),
-    onSuccess: (data) => {
-      if (data.length > 0 && !selectedLap) setSelectedLap(data[0]);
-    },
   });
+
+  useEffect(() => {
+    if (laps && laps.length > 0 && !selectedLap) setSelectedLap(laps[0]);
+  }, [laps]);
 
   const { data: channelList } = useQuery({
     queryKey: ["channels", selectedLap?.id],
