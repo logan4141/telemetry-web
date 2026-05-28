@@ -2,7 +2,7 @@ import axios from "axios";
 import type { Session, Lap, ChannelData, ChannelMeta, ComparisonSeries, VitalsResponse } from "./types";
 
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000",
+  baseURL: "",
 });
 
 export const sessions = {
